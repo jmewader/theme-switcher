@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/light-theme.css" rel="stylesheet" />
+    <title>Theme Switcher</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="content">
+        <main class="content__wrap">
+          <h1>Preferences</h1>
+          <p class="description">
+            On this page you can configure the main system parameters available
+            for customization
+          </p>
+          <form action="" method="" class="form-block">
+            <div class="form-block__item">
+              <label class="form-block__item--label" for="title"
+                >Company Title</label
+              >
+              <input
+                class="form-block__item--input"
+                placeholder="Default"
+                type="text"
+                name="title"
+                id="title"
+              />
+            </div>
+            <div class="form-block__item">
+              <label class="form-block__item--label" for="first-day"
+                >First Day</label
+              >
+              <select class="form-block__item--select" id="first-day">
+                <option value="monday">Monday</option>
+                <option value="sunday">Sunday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+              </select>
+            </div>
+
+            <div class="form-block__item">
+              <label class="form-block__item--label" for="container-width"
+                >Container Width</label
+              >
+              <select class="form-block__item--select" id="container-width">
+                <option value="fixed">Fixed</option>
+                <option value="relative">Relative</option>
+              </select>
+            </div>
+
+            <div class="form-block__item">
+              <label class="form-block__item--label" for="homepage"
+                >Homepage</label
+              >
+              <select class="form-block__item--select" id="homepage">
+                <option value="starred-projects">Starred Projects</option>
+                <option value="all">All</option>
+              </select>
+            </div>
+
+            <div class="form-block__item">
+              <label class="form-block__item--label" for="indent-size"
+                >Indent Size</label
+              >
+              <input
+                class="form-block__item--input"
+                placeholder="Default"
+                id="indent-size"
+                name="indent-size"
+              />
+            </div>
+
+            <div class="form-block__item">
+              <label class="form-block__item--label" for="personal-code"
+                >Personal Code</label
+              >
+              <input id="personal-code" name="personal-code" />
+              <input id="personal-code" name="personal-code" />
+              <input id="personal-code" name="personal-code" />
+            </div>
+
+            <div class="form-block__item">
+              <label class="form-block__item--label" for="theme">Theme</label>
+              <input type="radio" id="light-theme" /><label for="light-theme"
+                >Light</label
+              >
+              <input type="radio" id="dark-theme" /><label for="dark-theme"
+                >Dark</label
+              >
+            </div>
+
+            <div class="actions">
+              <button class="button">Apply and Save</button>
+              <button class="button button-white">Cancel</button>
+            </div>
+          </form>
+        </main>
+
+        <footer class="content__footer">
+          <img class="content__footer-img" src="./img/vector-light.png" />
+
+          <div class="content__footer-text">
+            2020-2022 <a href="#"> Terms of Service </a> and
+            <a href="#">Conditions</a>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
