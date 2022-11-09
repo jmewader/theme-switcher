@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/light-theme.css" rel="stylesheet" />
+    <link href="./css/nice-select.css" rel="stylesheet" />
     <title>Theme Switcher</title>
   </head>
   <body>
@@ -18,9 +19,7 @@
           </p>
           <form action="" method="" class="form-block">
             <div class="form-block__item">
-              <label class="form-block__item--label" for="title"
-                >Company Title</label
-              >
+              <label class="form-block__item--label">Company Title</label>
               <input
                 class="form-block__item--input"
                 placeholder="Default"
@@ -30,17 +29,11 @@
               />
             </div>
             <div class="form-block__item">
-              <label class="form-block__item--label" for="first-day"
-                >First Day</label
-              >
-              <select class="form-block__item--select" id="first-day">
-                <option value="monday">Monday</option>
-                <option value="sunday">Sunday</option>
-                <option value="tuesday">Tuesday</option>
-                <option value="wednesday">Wednesday</option>
-                <option value="thursday">Thursday</option>
-                <option value="friday">Friday</option>
-                <option value="saturday">Saturday</option>
+              <label class="form-block__item--label">First Day</label>
+              <select>
+                <option data-display="Monday">Monday</option>
+                <option value="1">Sunday</option>
+                <option value="2">System</option>
               </select>
             </div>
 
@@ -48,7 +41,7 @@
               <label class="form-block__item--label" for="container-width"
                 >Container Width</label
               >
-              <select class="form-block__item--select" id="container-width">
+              <select id="container-width">
                 <option value="fixed">Fixed</option>
                 <option value="relative">Relative</option>
               </select>
@@ -58,16 +51,14 @@
               <label class="form-block__item--label" for="homepage"
                 >Homepage</label
               >
-              <select class="form-block__item--select" id="homepage">
+              <select id="homepage">
                 <option value="starred-projects">Starred Projects</option>
                 <option value="all">All</option>
               </select>
             </div>
 
             <div class="form-block__item">
-              <label class="form-block__item--label" for="indent-size"
-                >Indent Size</label
-              >
+              <label class="form-block__item--label">Indent Size</label>
               <input
                 class="form-block__item--input"
                 placeholder="Default"
@@ -77,22 +68,51 @@
             </div>
 
             <div class="form-block__item">
-              <label class="form-block__item--label" for="personal-code"
-                >Personal Code</label
-              >
-              <input id="personal-code" name="personal-code" />
-              <input id="personal-code" name="personal-code" />
-              <input id="personal-code" name="personal-code" />
+              <label class="form-block__item--label alignment">Personal Code</label>
+              <div class="form-block__item--inputs">
+                <div class="form-block__item--input--wrap">
+                  <input
+                    class="form-block__item--input--small"
+                    id="personal-code"
+                    name="personal-code"
+                  />
+                  -
+                  <input
+                    class="form-block__item--input--small"
+                    id="personal-code"
+                    name="personal-code"
+                  />
+                  -
+                  <input
+                    class="form-block__item--input--small"
+                    id="personal-code"
+                    name="personal-code"
+                  />
+                </div>
+                <span>12 digits</span>
+              </div>
             </div>
 
             <div class="form-block__item">
-              <label class="form-block__item--label" for="theme">Theme</label>
-              <input type="radio" id="light-theme" /><label for="light-theme"
-                >Light</label
-              >
-              <input type="radio" id="dark-theme" /><label for="dark-theme"
-                >Dark</label
-              >
+              <span class="form-block__item--radio-block--title">Theme</span>
+              <div class="form-block__item--radio-block">
+                <div class="form-block__item--radio-block--item">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    id="light-theme"
+                    name="theme"
+                  /><label class="radio__label" for="light-theme">Light</label>
+                </div>
+                <div class="form-block__item--radio-block--item">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    id="dark-theme"
+                    name="theme"
+                  /><label class="radio__label" for="dark-theme">Dark</label>
+                </div>
+              </div>
             </div>
 
             <div class="actions">
@@ -113,5 +133,9 @@
         <img class="content__img" src="./img/vector-image.png" />
       </section>
     </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.nice-select.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
