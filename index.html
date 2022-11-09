@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link href="./css/light-theme.css" rel="stylesheet" /> -->
-    <link href="./css/dark-theme.css" rel="stylesheet" />
+    <link href="./css/light-theme.css" rel="stylesheet" id="theme-link" />
     <title>Theme Switcher</title>
   </head>
   <body>
@@ -68,7 +67,9 @@
             </div>
 
             <div class="form-block__item">
-              <label class="form-block__item--label alignment">Personal Code</label>
+              <label class="form-block__item--label alignment"
+                >Personal Code</label
+              >
               <div class="form-block__item--inputs">
                 <div class="form-block__item--input--wrap">
                   <input
@@ -102,6 +103,8 @@
                     type="radio"
                     id="light-theme"
                     name="theme"
+                    value="light"
+                    checked
                   /><label class="radio__label" for="light-theme">Light</label>
                 </div>
                 <div class="form-block__item--radio-block--item">
@@ -110,16 +113,16 @@
                     type="radio"
                     id="dark-theme"
                     name="theme"
+                    value="dark"
                   /><label class="radio__label" for="dark-theme">Dark</label>
                 </div>
               </div>
             </div>
-
-            <div class="actions">
-              <button class="button">Apply and Save</button>
-              <button class="button button-white">Cancel</button>
-            </div>
           </form>
+          <div class="actions">
+            <button id="data-save" class="button">Apply and Save</button>
+            <button class="button button-white">Cancel</button>
+          </div>
         </main>
 
         <footer class="content__footer">
@@ -137,5 +140,6 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery.nice-select.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/theme.js"></script>
   </body>
 </html>
