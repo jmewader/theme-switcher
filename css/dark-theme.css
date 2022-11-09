@@ -3,25 +3,25 @@
 
 /*VARIABLES*/
 :root {
-  --main-bg: #b0b5bd;
-  --content-bg: #f8f8f8;
-  --bg-blue: #2a75db;
-  --bg-field: #dfdada;
-  --bg-button-white: #f8f8f8;
+  --main-bg: #0c0d0d;
+  --content-bg: #1e1d1d;
+  --bg-blue: #b9d5fc;
+  --bg-field: #585050;
+  --bg-button-white: #424242;
 
-  --main-color--text: #0c0c0c;
-  --color-text: #585050;
-  --color-text--button: #f8f8f8;
-  --color-text--input: #0b0a0a;
+  --main-color--text: #f3f3f3;
+  --color-text: #dfdada;
+  --color-text--button: #1e1d1d;
+  --color-text--input: #f3f3f3;
   --color-text--brown: #887c7c;
-  --color-text--button-blue: #205eb0;
-  --color-text--button-white: #205eb0;
-  --color-text--button-link: #205EB0;
+  --color-text--button-blue: #1e1d1d;
+  --color-text--button-white: #aac9f1;
+  --color-text--button-link: #aac9f1;
 
-  --border-color--blue: #2a75db;
-  --border-color--light-blue: #aac9f1;
+  --border-color--blue: #aac9f1;
+  --border-color--light-blue: #f0f6ff;
   --border-color--input: #887c7c;
-  --border-color--link: #cdd9ea;
+  --border-color--link: #3a3f47;
 }
 
 html,
@@ -286,7 +286,7 @@ h1 {
 }
 
 .button-white {
-  background-color: var(--content-bg);
+  background-color: var(--bg-button-white);
   color: var(--color-text--button-white);
 }
 
